@@ -4,10 +4,13 @@ body{
 } 
 
 .logo{
+    position: absolute;
+    bottom: 8px;
+    left: 2px;
     display : block;
     margin : auto;
-    width: 70px;
-    height: 50px;
+    width: 100px;
+    height: 90px;
 }
 hi{
    margin-top:12px;
@@ -17,11 +20,14 @@ hi{
 }
 
 .container{
-    max-width: 955px;
+    position: absolute;
+    top: 25px;
+    right: 16px;
+    width: 1075px;
     border : 2px solid black;
     border-radius: 13px;
     margin: auto;
-    height: 60vh;
+    height: 70vh;
     padding: 33px;
     overflow-y: auto;
     margin-bottom: 23px;
@@ -46,6 +52,9 @@ hi{
 }
 
 #send-container{
+    position: absolute;
+    bottom: 80px;
+    right: 125px;
     display: block;
     margin: auto;
     text-align: center;
