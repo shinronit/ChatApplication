@@ -1,6 +1,8 @@
 body{
-    height: 100vh;
-    background-image: linear-gradient(rgb(92,255,255),purple);
+    height: 20h;
+    width: 20px;
+    background-image: url("coding.jpg");
+    
 } 
 
 .logo{
@@ -12,17 +14,44 @@ body{
     width: 100px;
     height: 90px;
 }
-hi{
-   margin-top:12px;
-   font-size: 30px;
+.background{
+    position: relative;
+    height: 810px;
+    width: 1520px;
+}
+h1{
+    position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 4%;
+        color : rgb(21, 255, 0);
+        text-align: left;
+        width: 91%;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   text-align: center;
+   
+}
+h2{
+    position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0px;
+        top: 4%;
+        color : rgb(0, 0, 0);
+        text-align: center;
+        width: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
 }
 
 .container{
+    background-image: linear-gradient(rgb(92,255,255),purple);
+    
     position: absolute;
-    top: 25px;
-    right: 16px;
+    top: 10px;
+    right: 2px;
     width: 1075px;
     border : 2px solid black;
     border-radius: 13px;
