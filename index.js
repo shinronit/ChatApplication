@@ -1,5 +1,17 @@
+const PORT = process.env.PORT || 5000;
+const INDEX = '/index.html';
+
+var express = require('express');
+const socketIO = require('socket.io');
+var path = require('path');
+
+const server = express()
+//   .use((req, res) => res.sendFile("/public/" + INDEX, { root: __dirname }))
+.use(express.static(path.join(__dirname, 'public')))
+  .listen(PORT, () => console.log(`Listening on ${PORT}`));
+
 //Node server which will handle socket.io connections
-const io = require ('socket.io')(8000)
+const io = socketIO(server);
 
 const users = {}
 
@@ -20,17 +32,3 @@ io.on('connection',socket =>{
     });
 });
 
-var fs = require('fs'),
-http = require('http');
-
-http.createServer(function (req, res) {
-  fs.readFile(__dirname + req.url, function (err,data) {
-    if (err) {
-      res.writeHead(404);
-      res.end(JSON.stringify(err));
-      return;
-    }
-    res.writeHead(200);
-    res.end(data);
-  });
-}).listen(process.env.PORT || 5000);
