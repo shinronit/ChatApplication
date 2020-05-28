@@ -1,23 +1,158 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ShinChats - Realtime Node Socket.IO Chat App</title>
-        <script defer src="/socket.io/socket.io.js"></script>
-        <script defer src="js/client.js"></script>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <nav>
-            <img class="logo" src="WhatsappLogo.jpg" alt="">
-            <img class="background" src="coding.jpg" alt="">
-            <img class="background2" src="containerbackground.jpg" alt="">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShinChats - Realtime Node Socket.IO Chat App</title>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="WhatsappLogo.jpg" alt="logo"></div>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#about">About</a> </li>
+            <li> <a href="#services">Services</a> </li>
+            <li> <a href="#contact">Contact Us</a> </li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">The Future of Chating is here.</p>
+                <p class="text-small">in this world of 7 billion people we need to educate all of them this
+                    . this is the future of an educated world The future of Education and we are proud to say that</p>
+                <div class="buttons">
+                    <button class="btn">Subscriber</button>
+                    <button class="btn">Watch Video</button>
+
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img src="WhatsappLogo.jpg" alt="Laptop Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="LiveChat">
+        <!-- live chat here -->
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?coding,apple" alt="laptopImage" class="imgFluid">
+        </div>
+    </section>
+
+
+    <section class="section" id="about">
+        <div class="paras">
+            <p class="sectionTag text-big">
+                The end of your search is here.
+            </p>
+            <p class="sectionSubTag text-small">
+                Online chat may refer to any kind of communication over the Internet that offers a real-time
+                transmission of text messages from sender to receiver. Chat messages are generally short in order to
+                enable other participants to respond quickly. Thereby, a feeling similar to a spoken conversation is
+                created, which distinguishes chatting from other text-based online communication forms such as Internet
+                forums and email. Online chat may address point-to-point communications as well as multicast
+                communications from one sender to many receivers and voice and video chat, or may be a feature of a web
+                conferencing service.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?coding,apple" alt="laptopImage" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <div class="paras">
+            <p class="sectionTag text-big">
+                Transforming Online Chating
+            </p>
+            <p class="sectionSubTag text-small">
+                Chat (text only): Multiple participants can be logged into the conference and can interactively share
+                resources and ideas. There is also option to save the chat and archive it for later review.
+                Voice (telephone or voice-over IP): This is a conference call between the instructor and the
+                participating students where they can speak through built-in microphone or a headset.
+                Video conferencing: This may or may not require the participants to have their webcams running. Usually,
+                a video conference involves a live feed from a classroom or elsewhere or a content.
+                Web conferencing: This includes Webinar (Web-based seminar) as well. Unlike in video conferencing,
+                participants of a web conferencing can access a wider variety of media elements. Web conferences are
+                comparatively more interactive and usually incorporate chat sessions as well.
+                Internet radio/podcasts: The instructors makes the audio file available in the Internet which is
+                archived and the students subscribed to the podcast can download it.
+                Virtual worlds: In this set up, students can meet in virtual world and speak with each other through
+                headsets and VoIP. This can make the learning more productive and engaging when the students are able to
+                navigate the worlds and operate in their avatar
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?nature,html" alt="laptopImage" class="imgFluid">
+        </div>
+    </section>
+
+
+    <section class="section section-left">
+        <div class="paras">
+            <p class="sectionTag text-big">
+                Lets Grow Together.
+            </p>
+            <p class="sectionSubTag text-small">
+                Computer software, or simply software, is a collection of data or computer instructions that tell the
+                computer how to work. This is in contrast to physical hardware, from which the system is built and
+                actually performs the work. In computer science and software engineering, computer software is all
+                information processed by computer systems, programs and data. Computer software includes computer
+                programs, libraries and related non-executable data, such as online documentation or digital media.
+                Computer hardware and software require each other and neither can be realistically used on its own.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?javascript,dollar" alt="laptopImage" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name.">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone.">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your Email.">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10"
+                placeholder="Ellaborate your concern"></textarea>
+            <button class="btn btn-sm btn-dark">Submit</button>
+        </div>
+    </section>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2020 shinko-chat.herokuapp.com - All rights reserved
+        </p>
+    </footer>
+    <script src="js/resp.js"></script>
+
+
+    <!-- <nav>
             <h2>Messages are visible here.</h2>
             <h1>Shinko World Chat</h1>
             <h3>Users List</h3>
         </nav>
-        <div class="container">
+        <div class="container"> 
+        
+        </div>
+        <div class="container2">
         
         </div>
         <div class="send">
@@ -25,11 +160,7 @@
                 <input type="text" name="messageInp" id="messageInp">
                 <button class="btn"type="submit">Send</button>
             </form>
-        </div>
-    </body>
-    <body>
-        <div class="container2">
-        
-        </div>
-    </body>
-    </html> 
+        </div> -->
+</body>
+
+</html>
