@@ -15,22 +15,21 @@ body{
     height: 90px;
 }
 .background{
-    position: relative;
-    height: 810px;
-    width: 1520px;
+    position: fixed;
+    height: 745px;
+    width: 1528px;  
 }
-h1{
+h1 {
     position: absolute;
-        z-index: 999;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        top: 4%;
-        color : rgb(21, 255, 0);
-        text-align: left;
-        width: 91%;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
+    z-index: 999;
+    margin: 0 auto;
+    left: -1118px;
+    right: 11px;
+    top: 4%;
+    color: rgb(21, 255, 0);
+    text-align: left;
+    width: 14%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h2{
     position: absolute;
@@ -41,31 +40,63 @@ h2{
         top: 4%;
         color : rgb(0, 0, 0);
         text-align: center;
-        width: 100%;
+        width: 20%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    
 }
+h3 {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: -979px;
+    right: 12%;
+    top: 25%;
+    color: rgb(0, 0, 0);
+    width: 6%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-.container{
+.container{  
+    background-image: linear-gradient(rgb(92,255,255),purple);
+    position: absolute;
+    top: 17px;
+    right: 7px;
+    width: 1075px;
+    border: 7px solid black;
+    border-radius: 12px;
+    margin: auto;
+    height: 70vh;
+    padding: 34px;
+    overflow-y: auto;
+    margin-bottom: 0px;
+}
+.container2{
     background-image: linear-gradient(rgb(92,255,255),purple);
     
     position: absolute;
-    top: 10px;
-    right: 2px;
-    width: 1075px;
+    top: 175px;
+    right: 1220px;
+    width: 155px;
     border : 2px solid black;
     border-radius: 13px;
     margin: auto;
-    height: 70vh;
+    height: 40vh;
     padding: 33px;
     overflow-y: auto;
+    overflow-x: auto;
     margin-bottom: 23px;
-
 }
 
 .message{
     background-color: rgb(162, 162, 187);
     width: 24%;
+    padding: 10px;
+    margin: 17px 2px; 
+    border: 2px solid black;
+}
+.message2{
+    background-color: rgb(162, 162, 187);
+    width: 100%;
     padding: 10px;
     margin: 17px 2px; 
     border: 2px solid black;
@@ -83,11 +114,11 @@ h2{
 #send-container{
     position: absolute;
     bottom: 80px;
-    right: 125px;
+    right: 113px;
     display: block;
     margin: auto;
     text-align: center;
-    max-width: 1085px;
+    max-width: 1085px;  
     width: 100%;
     display: flex;
     justify-content: center;
@@ -96,10 +127,12 @@ h2{
 }
 #messageInp{
     width: 80%;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 6px;
-    height: 34px;
-    font-size: 22px;
+    height: 26px;
+    font-size: 20px;
+    top: 9px;
+    position: relative;
 }
 
 .btn{
@@ -109,4 +142,8 @@ h2{
     border: 2px solid black;
     border-radius: 6px;
     height: 34px;
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    color: green;
 }
