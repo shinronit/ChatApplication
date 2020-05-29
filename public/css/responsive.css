@@ -42,4 +42,26 @@
     .paras{
         padding: 0px 1px;
     }
+    .container{
+        width: 235px;
+    }
+    .messageInp{
+        width: 34%;
+        height: 46px;
+        padding: 0px;
+        border: 2px solid red;
+    }
+    .btn-send{
+        position: relative;
+        margin: 0 5px;
+        width: 16%;
+        cursor: pointer;
+        border: 2px solid black;
+        border-radius: 6px;
+        height: 35px;
+        right: 27px;
+        top: 9px;
+        padding-right: -6px;
+        color: green;
+    }
 }

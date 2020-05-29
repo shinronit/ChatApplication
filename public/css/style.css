@@ -63,6 +63,12 @@ html{
     background-size: cover;
     background-blend-mode: darken;
 }
+.backgroundcopy{
+    background: rgb(0, 0, 0,0.7) url("https://source.unsplash.com/1920x1080/?coding,apple");
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
 .box-main{
     display: flex;
     justify-content: center;
@@ -74,7 +80,7 @@ html{
     height: 80%;
 }
 .firstSection{
-    height: 100vh;
+    height: 120vh;
 }
 .firstHalf{
     width: 80%;
@@ -202,146 +208,51 @@ html{
     height: 4px;
     margin: 3px 3px;
 }
-
-
-@media only screen and (max-width : 1144px){
-    .nav-list{
-        flex-direction: column;
-    }
-    .navbar{
-        height: 478px;
-        flex-direction: column;
-        transition: all 0.8s ease-out;
-    }
-    .rightNav{
-        text-align: center;
-    }
-    .search{
-        width:100;
-    }
-    .burger{
-        display: block;
-    }
-
-    .box-main{
-        flex-direction: column-reverse;
-        max-width: 100%;
-    }
-    .h-nav-resp{
-        height: 72px;
-    }
-    .v-class-resp{
-        opacity: 0;
-    }
-    .section{
-        flex-direction: column-reverse;
-    }
-    .text-small{
-        text-align: center;
-    }
-    .text-big{
-        text-align: center;
-    }
-    .buttons{
-        text-align: center;
-    }
-    .paras{
-        padding: 0px 1px;
-    }
-}
-
-
-
-
-/* OLD Code */
-/* body{
-    height: 20h;
-    width: 20px;
-    background-image: url("coding.jpg");
-    
-} 
-
-.logo{
-    position: absolute;
-    bottom: 8px;
-    left: 2px;
-    display : block;
-    margin : auto;
-    width: 100px;
-    height: 90px;
-}
-.background{
-    position: fixed;
-    height: 745px;
-    width: 1528px;  
-}
-h1 {
-    position: fixed;
-    z-index: 999;
-    margin: 0 auto;
-    left: -1118px;
-    right: 11px;
-    top: 4%;
-    color: rgb(21, 255, 0);
-    text-align: left;
-    width: 14%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-h2{
-    position: fixed;
-        z-index: 999;
-        margin: 0 auto;
-        left: 0;
-        right: 0px;
-        top: 4%;
-        color : rgb(0, 0, 0);
-        text-align: center;
-        width: 20%;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
-}
-h3 {
-    position: fixed;
-    z-index: 999;
-    margin: 0 auto;
-    left: -979px;
-    right: 12%;
-    top: 25%;
-    color: rgb(0, 0, 0);
-    width: 6%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .container{  
     background-image: linear-gradient(rgb(92,255,255),purple);
-    position: fixed;
-    top: 17px;
-    right: 7px;
-    width: 1075px;
-    border: 7px solid black;
+    width: 710px;
+    border: 1px solid black;
     border-radius: 12px;
+    /* float: right; */
     margin: auto;
     height: 70vh;
     padding: 34px;
     overflow-y: auto;
     margin-bottom: 0px;
 }
-.container2{
-    background-image: linear-gradient(rgb(92,255,255),purple);
-    
-    position: fixed;
-    top: 175px;
-    right: 1220px;
-    width: 155px;
-    border : 2px solid black;
-    border-radius: 13px;
+
+#send-container{
+
+    box-sizing: border-box;
+    display: block;
     margin: auto;
-    height: 40vh;
-    padding: 33px;
-    overflow-y: auto;
-    overflow-x: auto;
-    margin-bottom: 23px;
+    text-align: center;
+    max-width: 1085px;  
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+#messageInp{
+    width: 85%;
+    height: 44px;
+    padding: -4px;
+    border: 1px solid red;
+}
+.btn-send{
+    position: relative;
+    margin: 0 5px;
+    width: 16%;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 35px;
+    right: -375px;
+    top: -39px;
+    padding-right: -6px;
+    color: green;
+} 
 
 .message{
     background-color: rgb(162, 162, 187);
@@ -367,38 +278,4 @@ h3 {
     clear: both;
 }
 
-#send-container{
-    position: fixed;
-    bottom: 80px;
-    right: 113px;
-    display: block;
-    margin: auto;
-    text-align: center;
-    max-width: 1085px;  
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-#messageInp{
-    width: 80%;
-    border: 1px solid black;
-    border-radius: 6px;
-    height: 26px;
-    font-size: 20px;
-    top: 9px;
-    position: relative;
-}
-.btn{
-    margin: 0 5px;
-    width: 9%;
-    cursor: pointer;
-    border: 2px solid black;
-    border-radius: 6px;
-    height: 34px;
-    position: absolute;
-    top: 7px;
-    right: 0px;
-    color: green;
-} */
