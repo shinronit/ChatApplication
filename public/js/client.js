@@ -51,11 +51,12 @@ while (name == null || name == ""||name.length>20) {
 socket.emit('new-user-joined', name);
         
 socket.on('user-joined' , name =>{
-    if(name=="Ronit"||"CJ"){
-        append(`${name} : SUPER-ADMIN joined the chat` , 'right')   
+    if(name=="Ronit"){
+        append(`${name} : SUPER-ADMIN joined the chat` , 'right');
     }else{
         append(`${name} : has joined the chat` , 'right')
     }
+
 })
 
 socket.on('receive' , data =>{
