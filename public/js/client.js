@@ -5,6 +5,7 @@ const messageInput = document = document.getElementById('messageInp')
 const messageContainer = document.querySelector(".container")
 // const userContainer = document.querySelector(".container2")
 var audio = new Audio('ting.mp3');
+var audio1 = new Audio('send.mp3'); 
 
 
 const append = (message , position)=>{
@@ -27,6 +28,8 @@ const append = (message , position)=>{
 
     if(position == 'left'){
     audio.play();   
+    }else if(position == 'right'){
+        audio1.play();
     }
 }
 
@@ -48,10 +51,10 @@ while (name == null || name == ""||name.length>20) {
 socket.emit('new-user-joined', name);
         
 socket.on('user-joined' , name =>{
-    if(name=="Ronit"){
-        append(`${name} Admin joined the chat` , 'right')   
+    if(name=="Ronit"||"CJ"){
+        append(`${name} : SUPER-ADMIN joined the chat` , 'right')   
     }else{
-        append(`${name} joined the chat` , 'right')
+        append(`${name} : has joined the chat` , 'right')
     }
 })
 
